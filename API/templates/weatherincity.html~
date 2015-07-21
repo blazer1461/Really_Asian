@@ -8,6 +8,6 @@
 Currently {{temp_weather}} degrees fahrenheit.
 <br>
 <br>
-You are in a {{house}}.
+You are in a {{house}}
 
 {% endblock %}
