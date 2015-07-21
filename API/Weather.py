@@ -1,3 +1,4 @@
+__author__ = 'blazer1461'
 import urllib2
 import json
 
@@ -6,6 +7,8 @@ def get_weather(city):
     u= urllib2.urlopen(url)
     result= u.read();
     w= json.loads(result)
-    return w["main"]["temp"]
+    t=w["main"]["temp"]
+    f= 1.8 * (t-273)+32
+    return f
 
 
